@@ -10,13 +10,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Battle {
-  id         String @id @default(auto()) @map("_id") @db.ObjectId
-  playerTeam Team
-  enemyTeam  Team
-}
-
-type Team {
+model Team {
+  id        String     @id @default(auto()) @map("_id") @db.ObjectId
   name      String
   creatures Creature[]
 }
