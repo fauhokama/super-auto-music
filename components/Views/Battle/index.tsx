@@ -14,42 +14,13 @@ const BattleView: FC = () => {
 	// if (enemyError) return <div>An error occured.</div>;
 	// if (!enemyTeam) return <div>Loading ...</div>;
 
-	const battle = {
-		teams: {
-			initialPlayerTeam: {
-				creatures: [
-					{ instrument: 'DRUM', attack: 2, health: 1 },
-					{ instrument: 'PIANO', attack: 2, health: 2 },
-				],
-				id: '6253be7bbddbd76f27821574',
-				name: 'demoTeam',
-			},
-			initialEnemyTeam: {
-				creatures: [
-					{ instrument: 'GUITAR', attack: 0, health: 1 },
-					{ instrument: 'PIANO', attack: 2, health: 2 },
-				],
-				id: '6253c6eabddbd76f2782157e',
-				name: 'demo2Team',
-			},
-		},
-		turns: [
-			{
-				fromCreature: { instrument: 'DRUM', attack: 2, health: 1 },
-				toCreature: { instrument: 'GUITAR', attack: 0, health: -1 },
-				effect: { damage: 2 },
-			},
-			{ result: 'playerTeam wins' },
-		],
-	};
-
 	return (
 		<div>
 			{/* <button onClick={} className="bg-red-300 p-4 mb-4">
 				Battle!
 			</button> */}
 			<div className="flex justify-between">
-				<div>
+				{/* <div>
 					<h1> {battle.teams.initialEnemyTeam} </h1>
 					{playerTeam.creatures.map((creature, index) => (
 						<ElCreature key={index} {...creature} />
@@ -60,7 +31,7 @@ const BattleView: FC = () => {
 					{enemyTeam.creatures.map((creature, index) => (
 						<ElCreature key={index} {...creature} />
 					))}
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
